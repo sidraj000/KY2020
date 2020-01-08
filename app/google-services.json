@@ -1,42 +1,116 @@
 {
   "project_info": {
-    "project_number": "381425729111",
-    "firebase_url": "https://testapp-773b9.firebaseio.com",
-    "project_id": "testapp-773b9",
-    "storage_bucket": "testapp-773b9.appspot.com"
+    "project_number": "829303603906",
+    "firebase_url": "https://ky-2020.firebaseio.com",
+    "project_id": "ky-2020",
+    "storage_bucket": "ky-2020.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:381425729111:android:a2df75a55cb889e1b02d12",
+        "mobilesdk_app_id": "1:829303603906:android:e5b11c340416afe5c4715b",
         "android_client_info": {
-          "package_name": "org.kashiyatra.ky19"
+          "package_name": "com.alonemusk.ky2020"
         }
       },
       "oauth_client": [
         {
-          "client_id": "381425729111-1ma3nl3oeoo1n68o1pm1tqom4p68ttba.apps.googleusercontent.com",
+          "client_id": "829303603906-peinjfdj7k6e4hiau0l3jj1vaeu2rc12.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "org.kashiyatra.ky19",
-            "certificate_hash": "cd0bf6d91925a006c2347fa3a2e274548c1fbad2"
+            "package_name": "com.alonemusk.ky2020",
+            "certificate_hash": "1d960af7e928e8adc8659aa331e8d10788816b3d"
           }
         },
         {
-          "client_id": "381425729111-lu8d1rfevkdifuoeslfnldsg71ja5bdo.apps.googleusercontent.com",
+          "client_id": "829303603906-jcla1037645ajub5k78ejvkpmosgp0oa.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDWP-JEXzymgo3rtJBB-9E_YDWeFz-KA-Q"
+          "current_key": "AIzaSyBRsLusZ6EhItNf48QVuvgMZ61d6PGC6Tw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "381425729111-lu8d1rfevkdifuoeslfnldsg71ja5bdo.apps.googleusercontent.com",
+              "client_id": "829303603906-jcla1037645ajub5k78ejvkpmosgp0oa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829303603906:android:46f9fec6a51d69a2c4715b",
+        "android_client_info": {
+          "package_name": "org.kashiyatra.ky18"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829303603906-rgeaiipfgtnv6rurtfji4on84d7bo8ai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.kashiyatra.ky18",
+            "certificate_hash": "1d960af7e928e8adc8659aa331e8d10788816b3d"
+          }
+        },
+        {
+          "client_id": "829303603906-jcla1037645ajub5k78ejvkpmosgp0oa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRsLusZ6EhItNf48QVuvgMZ61d6PGC6Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829303603906-jcla1037645ajub5k78ejvkpmosgp0oa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829303603906:android:061790d1f8bfb871c4715b",
+        "android_client_info": {
+          "package_name": "org.kashiyatra.ky19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829303603906-gtpgp8sct47v7fcto3dqgsnl4vd2de47.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.kashiyatra.ky19",
+            "certificate_hash": "1d960af7e928e8adc8659aa331e8d10788816b3d"
+          }
+        },
+        {
+          "client_id": "829303603906-jcla1037645ajub5k78ejvkpmosgp0oa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRsLusZ6EhItNf48QVuvgMZ61d6PGC6Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829303603906-jcla1037645ajub5k78ejvkpmosgp0oa.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
