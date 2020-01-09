@@ -41,7 +41,7 @@ public class ScheduleFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_schedule, container, false);
         CircleMenu circlemenu = (CircleMenu)rootView.findViewById(R.id.circle_menu);
-        circlemenu.setMainMenu(Color.parseColor("#355c7d"),R.drawable.ic_launcher_menu,R.drawable.day)
+        circlemenu.setMainMenu(getResources().getColor(R.color.colorPrimary),R.drawable.ic_launcher_menu,R.drawable.day)
                 .addSubMenu(Color.parseColor("#355c7d"),R.drawable.circle_menu)
                 .addSubMenu(Color.parseColor("#6c5b7b"),R.drawable.day0_icon)
                 .addSubMenu(Color.parseColor("#c06c84"),R.drawable.day1_icon)
