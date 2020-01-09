@@ -15,6 +15,9 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
 import org.kashiyatra.ky19.R;
+import org.kashiyatra.ky19.UpdatesModel;
+
+import java.util.ArrayList;
 
 /**
  * Created by HemanthSai on 07-Jan-18.
@@ -22,16 +25,12 @@ import org.kashiyatra.ky19.R;
 
 public class UpdateAdapter extends RecyclerView.Adapter<UpdateAdapter.ViewHolder> {
 
-    String[] mBodies, mImageUrls, mLinks;
-    long[] mTimes;
-    Context mContext;
+   ArrayList<UpdatesModel> updatesModel;
+   Context context;
 
-    public UpdateAdapter(Context context, String[] bodies, String[] imageUrls, String[] links, long[] times) {
-        mBodies = bodies;
-        mImageUrls = imageUrls;
-        mLinks = links;
-        mContext = context;
-        mTimes = times;
+    public UpdateAdapter(ArrayList<UpdatesModel> updatesModel,Context context) {
+        this.updatesModel=updatesModel;
+        this.context=context;
     }
 
     @Override
@@ -43,43 +42,32 @@ public class UpdateAdapter extends RecyclerView.Adapter<UpdateAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(UpdateAdapter.ViewHolder holder, final int position) {
-        holder.mBodyTextView.setText(mBodies[position]);
-        holder.mTimeTextView.setText(DateUtils.getRelativeDateTimeString(mContext, mTimes[position],
-                DateUtils.SECOND_IN_MILLIS, DateUtils.DAY_IN_MILLIS, 0));
+        holder.mBodyTextView.setText(updatesModel.get(position).update);
+        holder.mTimeTextView.setText(updatesModel.get(position).url);
 
-        Glide.with(mContext)
-                .load(mImageUrls[position])
-                .apply(new RequestOptions()
-                        .centerCrop()
-                        .dontAnimate()
-                        .dontTransform())
-                .into(holder.mImageView);
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Uri uri = Uri.parse(mLinks[position]);
+                Uri uri = Uri.parse(updatesModel.get(position).url);
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                mContext.startActivity(intent);
+                context.startActivity(intent);
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return mBodies.length;
+        return updatesModel.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public View mView;
         public TextView mBodyTextView, mTimeTextView;
-        public ImageView mImageView;
-
+        public View mView;
         public ViewHolder(View v) {
             super(v);
             mView = v;
             mBodyTextView = v.findViewById(R.id.update_text);
-            mImageView = v.findViewById(R.id.update_image);
-            mTimeTextView = v.findViewById(R.id.update_time);
+            mTimeTextView = v.findViewById(R.id.updateUrl);
         }
     }
 }
