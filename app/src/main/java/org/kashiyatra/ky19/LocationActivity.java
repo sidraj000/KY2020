@@ -1,12 +1,12 @@
 package org.kashiyatra.ky19;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 
-import com.google.android.gms.maps.MapFragment;
+import org.kashiyatra.ky19.fragments.MapFragment;
 
 public class LocationActivity extends AppCompatActivity {
 
@@ -14,9 +14,10 @@ public class LocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location);
-        FragmentManager manager = getFragmentManager();
+        FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.add(R.id.container,new MapFragment(),"nothing");
+        transaction.add(R.id.container, MapFragment.newInstance(),"Tag");
         transaction.addToBackStack(null);
-        transaction.commit();    }
+        transaction.commit();
+    }
 }

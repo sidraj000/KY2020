@@ -4,6 +4,7 @@ import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -15,6 +16,7 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -50,7 +52,8 @@ public class NewLoginActivity extends Activity {
     public  String uId;
     public ChildEventListener mChildEventListener;
     FirebaseUser currentUser;
-    private DisplayMetrics dm;
+    VideoView videoView;
+  //  private DisplayMetrics dm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,11 +85,11 @@ public class NewLoginActivity extends Activity {
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         signInButton.setVisibility(View.GONE);
-        KenBurnsView kbv = (KenBurnsView) findViewById(R.id.image);
+      /*   KenBurnsView kbv = (KenBurnsView) findViewById(R.id.image);
 
 
             dm=getResources().getDisplayMetrics();
-        final ValueAnimator va=new ValueAnimator();
+       final ValueAnimator va=new ValueAnimator();
         va.setDuration(1500);
         va.setInterpolator(new DecelerateInterpolator());
         va.addUpdateListener(new ValueAnimator.AnimatorUpdateListener(){
@@ -95,16 +98,18 @@ public class NewLoginActivity extends Activity {
                 RelativeLayout.LayoutParams button_login_lp= (RelativeLayout.LayoutParams) signInButton.getLayoutParams();
                 button_login_lp.width=Math.round(p1.getAnimatedFraction());
                 signInButton.setLayoutParams(button_login_lp);
-              /*  RelativeLayout.LayoutParams button_login_lp2= (RelativeLayout.LayoutParams) loginButton.getLayoutParams();
+              *//*  RelativeLayout.LayoutParams button_login_lp2= (RelativeLayout.LayoutParams) loginButton.getLayoutParams();
                 button_login_lp2.width=Math.round(p1.getAnimatedFraction());
-                loginButton.setLayoutParams(button_login_lp2);*/
+                loginButton.setLayoutParams(button_login_lp2);*//*
             }
         });
         signInButton.animate().translationX(dm.widthPixels+signInButton.getMeasuredWidth()).setDuration(0).setStartDelay(0).start();
         signInButton.animate().translationX(0).setStartDelay(3000).setDuration(1500).setInterpolator(new OvershootInterpolator()).start();
+*/
 
-
-    }
+       /* videoView=findViewById(R.id.videoView);
+        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.header));
+  */  }
 
     @Override
     public void onStart() {
