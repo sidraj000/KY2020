@@ -40,7 +40,7 @@ import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class NewLoginActivity extends Activity {
+public class NewLoginActivity extends AppCompatActivity {
     Button button;
     public int PERMISSIONS_REQUEST = 100;
     private FirebaseAuth mAuth;
@@ -56,17 +56,17 @@ public class NewLoginActivity extends Activity {
   //  private DisplayMetrics dm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);/*
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);*/
         setContentView(R.layout.new_activity_login);
         button=findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(NewLoginActivity.this, HomeActivity.class));
-
+                finish();
             }
         });
         mAuth = FirebaseAuth.getInstance();
@@ -128,6 +128,33 @@ public class NewLoginActivity extends Activity {
             signInButton.setVisibility(View.VISIBLE);
             mGoogleSignInClient.signOut();
         }
+
+
+
+    }
+    @Override
+    public void onBackPressed() {
+        Log.w("lact","comes");
+        final AlertDialog.Builder builder = new AlertDialog.Builder(NewLoginActivity.this);
+        builder.setMessage("Confirm to Exit");
+        builder.setCancelable(true);
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        builder.setPositiveButton("Close!", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
 
 
 
@@ -216,33 +243,7 @@ public class NewLoginActivity extends Activity {
         ref.child("users").child(userId).setValue(user);
 
     }
-    @Override
-    public void onBackPressed() {
 
-        final AlertDialog.Builder builder = new AlertDialog.Builder(NewLoginActivity.this);
-        builder.setMessage("Confirm to Exit");
-        builder.setCancelable(true);
-        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        });
-        builder.setPositiveButton("Close!", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.addCategory(Intent.CATEGORY_HOME);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-            }
-        });
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
-
-
-
-    }
 
 
 
