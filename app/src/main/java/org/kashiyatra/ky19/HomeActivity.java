@@ -316,33 +316,25 @@ public class HomeActivity extends AppCompatActivity
            case R.id.nav_profile:
                 startActivity(new Intent(HomeActivity.this,UserProfile.class));
                 break;
-         /*   case R.id.nav_about:
-                mViewPager.setCurrentItem(0);
+            case R.id.nav_about:
+                setContainer(1);
                 break;
             case R.id.nav_schedule:
-                mViewPager.setCurrentItem(1);
+                setContainer(3);
                 break;
             case R.id.nav_events:
-                startActivity(new Intent(HomeActivity.this,EventsActivity.class));
-                break;*/
+                setContainer(4);
+                 break;
             case R.id.nav_location:
-              //  mViewPager.setCurrentItem(3);
-               /* FragmentTransaction transaction = manager.beginTransaction();
-                transaction.add(R.id.viewpager,MapFragment.newInstance(),"Tag");
-                transaction.addToBackStack(null);
-                transaction.commit();*/
             startActivity(new Intent(HomeActivity.this,LocationActivity.class));
                 break;
-
-            case R.id.nav_events:
-                startActivity(new Intent(HomeActivity.this,EventActivity.class));
             case R.id.Gallery:
                 Intent intent1=new Intent(getApplicationContext(),GalleryActivty.class);
                 startActivity(intent1);
                 break;
-           /* case R.id.nav_sponsors:
-                mViewPager.setCurrentItem(4);
-                break;*/
+            case R.id.nav_sponsors:
+                setContainer(5);
+                break;
             default:
                 break;
         }

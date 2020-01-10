@@ -120,8 +120,7 @@ public class NewLoginActivity extends Activity {
         if(currentUser!=null)
         {
                 startActivity(new Intent(NewLoginActivity.this, HomeActivity.class));
-
-
+                finish();
         }
         else
         {
@@ -199,6 +198,7 @@ public class NewLoginActivity extends Activity {
             writeNewUser(user.getUid(), user.getDisplayName(), user.getEmail(), user.getPhotoUrl().toString());
           //  Toast.makeText(this, "hii", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(NewLoginActivity.this, HomeActivity.class));
+            finish();
             Toast.makeText(NewLoginActivity.this, "Successfully logged in as "+user.getDisplayName(), Toast.LENGTH_SHORT).show();
         }
             else
