@@ -327,13 +327,15 @@ public class HomeActivity extends AppCompatActivity
                 break;*/
             case R.id.nav_location:
               //  mViewPager.setCurrentItem(3);
-                FragmentManager manager=getSupportFragmentManager();
                /* FragmentTransaction transaction = manager.beginTransaction();
                 transaction.add(R.id.viewpager,MapFragment.newInstance(),"Tag");
                 transaction.addToBackStack(null);
                 transaction.commit();*/
             startActivity(new Intent(HomeActivity.this,LocationActivity.class));
                 break;
+
+            case R.id.nav_events:
+                startActivity(new Intent(HomeActivity.this,EventActivity.class));
             case R.id.Gallery:
                 Intent intent1=new Intent(getApplicationContext(),GalleryActivty.class);
                 startActivity(intent1);
