@@ -409,10 +409,11 @@
     </string-array>
 
     <string-array name="team_names_marketing">
+        <item>Jagdish Daad</item>
+
         <item>Priyanshu Raj</item>
         <item>Yashika Choudhary</item>
         <item>Tanay Dubey</item>
-        <item>Jagdish Daad</item>
     </string-array>
 
     <string-array name="team_names_publicity">
@@ -541,10 +542,11 @@
     </string-array>
 
     <string-array name="team_photo_urls_marketing">
+        <item>https://i.ibb.co/rQBm2rq/jagdish.jpg</item>
+
         <item>https://i.ibb.co/4R9X05d/priyanshu.jpg</item>
         <item>https://i.ibb.co/BBK73Mp/yashika.jpg</item>
         <item>https://i.ibb.co/9bkZgnW/tanay.jpg</item>
-        <item>https://i.ibb.co/rQBm2rq/jagdish.jpg</item>
 
 
     </string-array>
@@ -591,7 +593,7 @@
         <item>https://i.ibb.co/X48gNj9/vaibhav1.jpg</item>
         <item>https://i.ibb.co/C2GqvSs/parth.jpg</item>
         <item>https://i.ibb.co/RTSvG3C/vaibhav.jpg</item>
-        <item>https://i.ibb.co/yn6BM64/pankaj.jpg</item>
+        <item>https://i.ibb.co/yn6BM64</item>
     </string-array>
 
     <string-array name="team_photo_urls_creative">
@@ -612,7 +614,7 @@
         <item>anshula.pandey.civ17@itbhu.ac.in</item>
         <item>shreyash.baijal.cer17@itbhu.ac.in</item>
         <item>apoorv.bansal.mat16@itbhu.ac.in</item>
-
+        <item>apoorv.bansal.mat16@itbhu.ac.in</item>
     </string-array>
 
     <string-array name="team_emails_publicity">
@@ -671,10 +673,11 @@
     </string-array>
 
     <string-array name="team_fblinks_marketing">
+        <item> https://www.facebook.com/jdaad2</item>
+
         <item>https://www.facebook.com/profile.php?id=100015317821448</item>
         <item>https://www.facebook.com/cyashu99</item>
         <item>https://www.facebook.com/tanay.dubey.77</item>
-       <item> https://www.facebook.com/jdaad2</item>
 
     </string-array>
 
