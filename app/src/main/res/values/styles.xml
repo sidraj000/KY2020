@@ -37,7 +37,7 @@
     </style>
 
     <style name="MyTheme2" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/dark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/dark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
