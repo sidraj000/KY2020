@@ -5,9 +5,13 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,6 +20,10 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import org.kashiyatra.ky19.adapters.SubeventsAdapter;
@@ -173,11 +181,34 @@ public class EventListActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         SharedPreferences.Editor mEditor = mPrefs.edit();
         int id = item.getItemId();
+        FirebaseInstanceId.getInstance().getInstanceId()
+                .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<InstanceIdResult> task) {
+                        if (!task.isSuccessful()) {
+                            Log.w("hello", "getInstanceId failed", task.getException());
+                            return;
+                        }
+
+                        // Get new Instance ID token
+                        String token = task.getResult().getToken();
+
+                        // Log and toast
+
+                        Log.d("somehting", token);
+                    }
+                });
+
         switch (id) {
             case R.id.action_subscribe:
-                FirebaseMessaging.getInstance().subscribeToTopic(mEventName);
+                FirebaseMessaging.getInstance().subscribeToTopic("general").addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+
+                    }
+                });
                 mEditor.putBoolean(mEventName, true);
-                Toast.makeText(this, "Subscribed to notifications for " + mEventName, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Subscribed to notifications for general" , Toast.LENGTH_SHORT).show();
                 break;
             case R.id.action_unsubscribe:
                 FirebaseMessaging.getInstance().unsubscribeFromTopic(mEventName);

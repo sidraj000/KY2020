@@ -153,7 +153,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="5dp"
-            android:src="@drawable/ic_faq"
+            android:src="@drawable/ic_all_out_black_24dp"
             fab:fab_colorNormal="@color/no5"
             fab:fab_colorPressed="@color/no4"
             fab:fab_size="normal" />
