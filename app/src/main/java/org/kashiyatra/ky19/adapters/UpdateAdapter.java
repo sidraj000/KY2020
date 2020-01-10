@@ -19,14 +19,16 @@ import org.kashiyatra.ky19.UpdatesModel;
 
 import java.util.ArrayList;
 
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+
 /**
  * Created by HemanthSai on 07-Jan-18.
  */
 
 public class UpdateAdapter extends RecyclerView.Adapter<UpdateAdapter.ViewHolder> {
 
-   ArrayList<UpdatesModel> updatesModel;
-   Context context;
+   public ArrayList<UpdatesModel> updatesModel;
+   public Context context;
 
     public UpdateAdapter(ArrayList<UpdatesModel> updatesModel,Context context) {
         this.updatesModel=updatesModel;
@@ -50,6 +52,7 @@ public class UpdateAdapter extends RecyclerView.Adapter<UpdateAdapter.ViewHolder
             public void onClick(View view) {
                 Uri uri = Uri.parse(updatesModel.get(position).url);
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
         });
@@ -67,7 +70,7 @@ public class UpdateAdapter extends RecyclerView.Adapter<UpdateAdapter.ViewHolder
             super(v);
             mView = v;
             mBodyTextView = v.findViewById(R.id.update_text);
-            mTimeTextView = v.findViewById(R.id.updateUrl);
+            mTimeTextView = v.findViewById(R.id.update_url);
         }
     }
 }
