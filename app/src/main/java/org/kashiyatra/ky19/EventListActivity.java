@@ -110,15 +110,17 @@ public class EventListActivity extends AppCompatActivity {
 
         ImageView photoView = findViewById(R.id.background_image_view);
 
-        Glide.with(this)
-                .load(scheduleUrl)
-                .apply(new RequestOptions()
+    /*    Glide.with(this)
+                .load(new RequestOptions()
                         .placeholder(placeholderId)
                         .error(placeholderId)
                         .fitCenter()
                         .dontAnimate()
                         .dontTransform())
-                .into(photoView);
+                .into(photoView);*/
+    Glide.with(this)
+            .load(placeholderId)
+            .into(imageView);
 
         RecyclerView mSubeventRecycler = findViewById(R.id.subevent_list_recycler_view);
         RecyclerView.LayoutManager mSubeventLayoutManager = new LinearLayoutManager(this);

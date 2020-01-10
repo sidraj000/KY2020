@@ -7,7 +7,7 @@
 
     <ImageView
         android:id="@+id/photo_view"
-        android:src="@drawable/concerts_image"
+        android:src="#1b1b1b"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:adjustViewBounds="true"

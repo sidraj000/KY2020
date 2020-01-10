@@ -9,10 +9,12 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewTreeObserver;
+import android.widget.ImageView;
 
 public class ConcertsActivity extends AppCompatActivity {
 
     private View background;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +24,7 @@ public class ConcertsActivity extends AppCompatActivity {
 
         background = findViewById(R.id.concerts);
 
-        if (savedInstanceState == null) {
+       /* if (savedInstanceState == null) {
             background.setVisibility(View.INVISIBLE);
 
             final ViewTreeObserver viewTreeObserver = background.getViewTreeObserver();
@@ -40,7 +42,7 @@ public class ConcertsActivity extends AppCompatActivity {
             }
 
         }
-
+*/
     }
     private void circularRevealActivity() {
         int cx = background.getWidth()/2;

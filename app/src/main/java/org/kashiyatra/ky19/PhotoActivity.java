@@ -2,21 +2,48 @@ package org.kashiyatra.ky19;
 
 import android.animation.Animator;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.facebook.appevents.codeless.internal.Constants;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class PhotoActivity extends AppCompatActivity {
     private View background;
+    StorageReference storageRef = FirebaseStorage.getInstance().getReference();
+    public String scheduleVersion="0";
+    public ImageView photoView;
+    public String currentVersion;
+    public  int day;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +51,11 @@ public class PhotoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_photo);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Intent intent = getIntent();
-        int day = intent.getIntExtra("day", 1);
+        day = intent.getIntExtra("day", 1);
         int placeholderId;
         String scheduleUrl;
+
+        photoView = findViewById(R.id.photo_view);
         switch (day) {
 
             case 0:
@@ -55,17 +84,19 @@ public class PhotoActivity extends AppCompatActivity {
                 getSupportActionBar().setTitle("Day 0");
         }
 
-        ImageView photoView = findViewById(R.id.photo_view);
+        currentVersion=getSharedPreferences("ky2020", this.MODE_PRIVATE).getString("scheduleVersionDay"+day, "0");
 
+
+
+
+/*
         Glide.with(this)
                 .load(scheduleUrl)
                 .apply(new RequestOptions()
-                        .placeholder(placeholderId)
-                        .error(placeholderId)
                         .fitCenter()
                         .dontAnimate()
                         .dontTransform())
-                .into(photoView);
+                .into(photoView);*/
 
         background = findViewById(R.id.photo_id);
 
@@ -117,6 +148,12 @@ public class PhotoActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        getversion();
+    }
+
+    @Override
     public void onBackPressed() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             int cx = background.getWidth()/2;
@@ -152,6 +189,58 @@ public class PhotoActivity extends AppCompatActivity {
         }
         else {
             super.onBackPressed();
+        }
+    }
+    public void getversion()
+    {
+        FirebaseDatabase.getInstance().getReference().child("schedule_version").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                scheduleVersion=dataSnapshot.child("versionDay"+Integer.toString(day)).getValue().toString();
+                Log.d("pActivity",scheduleVersion);
+                loadImage();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+    public void loadImage()
+    {
+        final File file= new File(this.getFilesDir(),"Day-"+day +".jpg");
+        Log.d("pActivity",currentVersion+"curr");
+        Log.d("pActivity",scheduleVersion+"schedule");
+        Log.d("pActivity",""+file.exists());
+        if(file.exists()&&currentVersion.equals(scheduleVersion))
+        {
+
+            photoView.setImageBitmap(BitmapFactory.decodeFile(file.getPath()));
+            Log.d("pActivity","exists");
+        }
+        else {
+
+            Log.w("pActivity","doesnt_exist");
+            storageRef.child("schedule/" +"Day-"+day+".jpg").getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                    photoView.setImageBitmap(BitmapFactory.decodeFile(file.getPath()));
+                    SharedPreferences.Editor editor =PhotoActivity.this.getSharedPreferences("ky2020", PhotoActivity.this.MODE_PRIVATE).edit();
+                    editor.putString("scheduleVersionDay"+day,scheduleVersion);
+                    editor.commit();
+
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception exception) {
+                    Toast.makeText(PhotoActivity.this, "Please check your internet connection.", Toast.LENGTH_SHORT).show();
+                    Log.d("pActivity",""+exception);
+                }
+            });
+
+
+
         }
     }
 }

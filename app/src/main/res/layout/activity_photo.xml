@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:contentDescription="@null"
-        android:src="@drawable/day1"
+        android:src="#1b1b1b"
         android:scaleType="fitXY" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

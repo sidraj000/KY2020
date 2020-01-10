@@ -41,7 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="@color/no5">
+                    android:background="@color/colorSecondary">
 
 
                     <TextView
@@ -123,7 +123,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="37dp"
                 card_view:cardElevation="6dp"
                 card_view:cardCornerRadius="10dp"
@@ -138,7 +138,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="@color/no5">
+                    android:background="@color/colorSecondary">
 
 
                     <TextView
@@ -221,7 +221,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="37dp"
                 card_view:cardElevation="6dp"
                 card_view:cardCornerRadius="10dp"
@@ -236,7 +236,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="@color/no5">
+                    android:background="@color/colorSecondary">
 
 
                     <TextView
@@ -320,7 +320,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="37dp"
                 card_view:cardElevation="6dp"
                 card_view:cardCornerRadius="10dp"
@@ -335,7 +335,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="@color/no5">
+                    android:background="@color/colorSecondary">
 
 
                     <TextView
@@ -419,7 +419,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginStart="37dp"
                 card_view:cardElevation="6dp"
                 card_view:cardCornerRadius="10dp"
@@ -435,7 +435,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:background="@color/no5">
+                    android:background="@color/colorSecondary">
 
 
                     <TextView
@@ -523,7 +523,7 @@
             android:id="@+id/mail_button"
             android:padding="5dp"
             android:src="@drawable/ic_action_name"
-            fab:fab_colorNormal="@color/dark"
+            fab:fab_colorNormal="@color/colorPrimary"
             fab:fab_colorPressed="@color/darkpink"
             fab:fab_size="normal"
             android:layout_width="wrap_content"
