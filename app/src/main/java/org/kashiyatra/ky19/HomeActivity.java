@@ -314,7 +314,7 @@ public class HomeActivity extends AppCompatActivity
         Intent intent;
         switch (id) {
            case R.id.nav_profile:
-                startActivity(new Intent(HomeActivity.this,UserProfile.class));
+                startActivity(new Intent(HomeActivity.this,ProfileActivity.class));
                 break;
             case R.id.nav_about:
                 setContainer(1);
