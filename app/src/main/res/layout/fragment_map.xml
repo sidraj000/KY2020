@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="48dp"
         map:cameraZoom="17"
-        tools:context="org.kashiyatra.ky19.fragments.MapFragment" />
+        tools:context="org.kashiyatra.ky20.fragments.MapFragment" />
 
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/filter_menu"

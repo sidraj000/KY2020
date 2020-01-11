@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark"
-    tools:context="org.kashiyatra.ky19.EventListActivity">
+    tools:context="org.kashiyatra.ky20.EventListActivity">
 
     <ImageView
         android:id="@+id/background_image_view"

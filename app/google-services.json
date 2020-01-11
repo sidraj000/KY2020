@@ -116,6 +116,43 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829303603906:android:06c976fe998e74a8c4715b",
+        "android_client_info": {
+          "package_name": "org.kashiyatra.ky20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829303603906-2gqm6394os0oqr9qebqjl7roum3ngo4s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.kashiyatra.ky20",
+            "certificate_hash": "cd0bf6d91925a006c2347fa3a2e274548c1fbad2"
+          }
+        },
+        {
+          "client_id": "829303603906-jcla1037645ajub5k78ejvkpmosgp0oa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRsLusZ6EhItNf48QVuvgMZ61d6PGC6Tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829303603906-jcla1037645ajub5k78ejvkpmosgp0oa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

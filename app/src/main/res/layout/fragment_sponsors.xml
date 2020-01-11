@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorPrimaryDark"
-    tools:context="org.kashiyatra.ky19.fragments.EventsFragment">
+    tools:context="org.kashiyatra.ky20.fragments.EventsFragment">
 
     <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/sponsor_recycler"

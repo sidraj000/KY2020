@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:id="@+id/faq"
-    tools:context="org.kashiyatra.ky19.FaqActivity">
+    tools:context="org.kashiyatra.ky20.FaqActivity">
 
    <ExpandableListView
        android:id="@+id/exp1"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/sdle_bg"
-    tools:context="org.kashiyatra.ky19.fragments.ScheduleFragment">
+    tools:context="org.kashiyatra.ky20.fragments.ScheduleFragment">
 
     <com.hitomi.cmlibrary.CircleMenu
         android:id="@+id/circle_menu"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.kashiyatra.ky19">
+    package="org.kashiyatra.ky20">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,13 +14,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LocationActivity"
+        <activity android:name="org.kashiyatra.ky20.LocationActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
-            android:name=".QRcode"
+            android:name="org.kashiyatra.ky20.QRcode"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
-            android:name=".EventsActivity"
+            android:name="org.kashiyatra.ky20.EventsActivity"
             android:theme="@style/AppTheme.NoActionBar" /> <!-- <service -->
         <!-- android:name="org.kashiyatra.ky19.services.MyFirebaseInstanceIDService" -->
         <!-- android:exported="false"> -->
@@ -29,14 +29,14 @@
         <!-- </intent-filter> -->
         <!-- </service> -->
         <activity
-            android:name=".UserProfile"
+            android:name="org.kashiyatra.ky20.UserProfile"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
         <activity
-            android:name=".GalleryActivty"
+            android:name="org.kashiyatra.ky20.GalleryActivty"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.facebook.CustomTabActivity"
@@ -51,26 +51,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HomeActivity"
+            android:name="org.kashiyatra.ky20.HomeActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".EventActivity"
+            android:name="org.kashiyatra.ky20.EventActivity"
             android:label="@string/title_activity_event"
-            android:parentActivityName=".EventListActivity"
+            android:parentActivityName="org.kashiyatra.ky20.EventListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.EventListActivity" />
+                android:value="org.kashiyatra.ky20.EventListActivity" />
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name="org.kashiyatra.ky20.SplashActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".NewLoginActivity"
+            android:name="org.kashiyatra.ky20.NewLoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -80,184 +80,184 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EventListActivity"
+            android:name="org.kashiyatra.ky20.EventListActivity"
             android:label="@string/title_activity_eventlist"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName="org.kashiyatra.ky20.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyThemeEvents">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.HomeActivity" />
+                android:value="org.kashiyatra.ky20.HomeActivity" />
         </activity>
         <activity
-            android:name=".RegistrationActivity"
+            android:name="org.kashiyatra.ky20.RegistrationActivity"
             android:label="@string/title_activity_registration"
             android:parentActivityName=".LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme" />
         <activity
-            android:name=".PhotoActivity"
+            android:name="org.kashiyatra.ky20.PhotoActivity"
             android:launchMode="singleTask"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName="org.kashiyatra.ky20.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyThemeDay">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.HomeActivity" />
+                android:value="org.kashiyatra.ky20.HomeActivity" />
         </activity>
         <activity
-            android:name=".UpdatesActivity"
+            android:name="org.kashiyatra.ky20.UpdatesActivity"
             android:label="Updates"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName="org.kashiyatra.ky20.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.HomeActivity" />
+                android:value="org.kashiyatra.ky20.HomeActivity" />
         </activity>
         <activity
-            android:name=".ProfileActivity"
+            android:name="org.kashiyatra.ky20.ProfileActivity"
             android:label=""
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName="org.kashiyatra.ky20.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MYTheme_transparent">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.HomeActivity" />
+                android:value="org.kashiyatra.ky20.HomeActivity" />
         </activity>
         <activity
-            android:name=".MerchandiseActivity"
-            android:label=""
-            android:launchMode="singleTask"
-            android:parentActivityName=".ProfileActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/MYTheme_transparent">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.ProfileActivity" />
-        </activity>
-        <activity
-            android:name=".TeamActivity"
+            android:name="org.kashiyatra.ky20.MerchandiseActivity"
             android:label=""
             android:launchMode="singleTask"
-            android:parentActivityName=".ProfileActivity"
+            android:parentActivityName="org.kashiyatra.ky20.ProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MYTheme_transparent">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.ProfileActivity" />
+                android:value="org.kashiyatra.ky20.ProfileActivity" />
         </activity>
         <activity
-            android:name=".FaqActivity"
+            android:name="org.kashiyatra.ky20.TeamActivity"
             android:label=""
             android:launchMode="singleTask"
-            android:parentActivityName=".ProfileActivity"
+            android:parentActivityName="org.kashiyatra.ky20.ProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MYTheme_transparent">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.ProfileActivity" />
+                android:value="org.kashiyatra.ky20.ProfileActivity" />
         </activity>
         <activity
-            android:name=".ConcertsActivity"
+            android:name="org.kashiyatra.ky20.FaqActivity"
+            android:label=""
+            android:launchMode="singleTask"
+            android:parentActivityName="org.kashiyatra.ky20.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MYTheme_transparent">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.kashiyatra.ky20.ProfileActivity" />
+        </activity>
+        <activity
+            android:name="org.kashiyatra.ky20.ConcertsActivity"
             android:label="Concerts"
             android:launchMode="singleTask"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName="org.kashiyatra.ky20.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyThemeDay">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.HomeActivity" />
+                android:value="org.kashiyatra.ky20.HomeActivity" />
         </activity>
         <activity
-            android:name=".HelplineActivity"
+            android:name="org.kashiyatra.ky20.HelplineActivity"
             android:label="Helpline"
-            android:parentActivityName=".HomeActivity"
+            android:parentActivityName="org.kashiyatra.ky20.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.HomeActivity" />
+                android:value="org.kashiyatra.ky20.HomeActivity" />
         </activity>
         <activity
-            android:name=".TeamGroups.CoreActivity"
+            android:name="org.kashiyatra.ky20.TeamGroups.CoreActivity"
             android:label="Core Team"
-            android:parentActivityName=".TeamActivity"
+            android:parentActivityName="org.kashiyatra.ky20.TeamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.TeamActivity" />
+                android:value="org.kashiyatra.ky20.TeamActivity" />
         </activity>
         <activity
-            android:name=".TeamGroups.EventsTeamActivity"
+            android:name="org.kashiyatra.ky20.TeamGroups.EventsTeamActivity"
             android:label="Events Team"
-            android:parentActivityName=".TeamActivity"
+            android:parentActivityName="org.kashiyatra.ky20.TeamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.TeamActivity" />
+                android:value="org.kashiyatra.ky20.TeamActivity" />
         </activity>
         <activity
-            android:name=".TeamGroups.MarketingActivity"
+            android:name="org.kashiyatra.ky20.TeamGroups.MarketingActivity"
             android:label="Marketing Team"
-            android:parentActivityName=".TeamActivity"
+            android:parentActivityName="org.kashiyatra.ky20.TeamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.TeamActivity" />
+                android:value="org.kashiyatra.ky20.TeamActivity" />
         </activity>
         <activity
-            android:name=".TeamGroups.OpnLogActivity"
+            android:name="org.kashiyatra.ky20.TeamGroups.OpnLogActivity"
             android:label="Operations And Logistics Team"
-            android:parentActivityName=".TeamActivity"
+            android:parentActivityName="org.kashiyatra.ky20.TeamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.TeamActivity" />
+                android:value="org.kashiyatra.ky20.TeamActivity" />
         </activity>
         <activity
-            android:name=".TeamGroups.PublicityActivity"
+            android:name="org.kashiyatra.ky20.TeamGroups.PublicityActivity"
             android:label="Publicity Team"
-            android:parentActivityName=".TeamActivity"
+            android:parentActivityName="org.kashiyatra.ky20.TeamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.TeamActivity" />
+                android:value="org.kashiyatra.ky20.TeamActivity" />
         </activity>
         <activity
-            android:name=".TeamGroups.PubRelActivity"
+            android:name="org.kashiyatra.ky20.TeamGroups.PubRelActivity"
             android:label="Public Relations Team"
-            android:parentActivityName=".TeamActivity"
+            android:parentActivityName="org.kashiyatra.ky20.TeamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.TeamActivity" />
+                android:value="org.kashiyatra.ky20.TeamActivity" />
         </activity>
         <activity
-            android:name=".TeamGroups.TechActivity"
+            android:name="org.kashiyatra.ky20.TeamGroups.TechActivity"
             android:label="Technical Team"
-            android:parentActivityName=".TeamActivity"
+            android:parentActivityName="org.kashiyatra.ky20.TeamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.TeamActivity" />
+                android:value="org.kashiyatra.ky20.TeamActivity" />
         </activity>
         <activity
-            android:name=".TeamGroups.CreativeActivity"
+            android:name="org.kashiyatra.ky20.TeamGroups.CreativeActivity"
             android:label="Creative Team"
-            android:parentActivityName=".TeamActivity"
+            android:parentActivityName="org.kashiyatra.ky20.TeamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MyTheme2">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.kashiyatra.ky19.TeamActivity" />
+                android:value="org.kashiyatra.ky20.TeamActivity" />
         </activity>
 
         <meta-data
@@ -273,7 +273,7 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
 
-        <service android:name=".services.MyFirebaseMessagingService">
+        <service android:name="org.kashiyatra.ky20.services.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
