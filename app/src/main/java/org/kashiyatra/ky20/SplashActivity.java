@@ -28,11 +28,8 @@ public class SplashActivity extends AppCompatActivity {
                 SharedPreferences preferences = getSharedPreferences(storeUserDetails, Context.MODE_PRIVATE);
                 boolean isLoggedIn = preferences.getBoolean("isLoggedIn", false);
                 Intent mainIntent;
-                if (isLoggedIn) {
-                    mainIntent = new Intent(SplashActivity.this, HomeActivity.class);
-                } else {
+
                     mainIntent = new Intent(SplashActivity.this, NewLoginActivity.class);
-                }
                 SplashActivity.this.startActivity(mainIntent);
                 overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 SplashActivity.this.finish();

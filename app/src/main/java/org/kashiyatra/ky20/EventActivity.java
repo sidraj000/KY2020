@@ -163,7 +163,7 @@ public class  EventActivity extends AppCompatActivity {
                 onBackPressed();
                 return true;
             case R.id.action_register:
-                Uri uri = Uri.parse("http://kashiyatra.org/dashboard/events");
+                Uri uri = Uri.parse("http://kashiyatra.org");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 startActivity(intent);
             default:

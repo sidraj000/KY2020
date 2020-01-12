@@ -31,7 +31,7 @@ public class HelplineActivity extends AppCompatActivity {
                 Email.putExtra(Intent.EXTRA_SUBJECT,
                         ""); // Email 's Subject
                 Email.putExtra(Intent.EXTRA_TEXT, "" + "");  //Email 's Greeting text
-                startActivity(Intent.createChooser(Email, "Send Mail to Kashiyatra'19"));
+                startActivity(Intent.createChooser(Email, "Send Mail to Kashiyatra'20"));
             }
         });
 

@@ -9,7 +9,6 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="48dp"
         map:cameraZoom="17"
         tools:context="org.kashiyatra.ky20.fragments.MapFragment" />
 
@@ -19,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="105dp"
+        android:layout_marginBottom="50dp"
         android:layout_marginEnd="11dp"
         fab:menu_animationDelayPerItem="55"
         fab:menu_backgroundColor="@android:color/transparent"

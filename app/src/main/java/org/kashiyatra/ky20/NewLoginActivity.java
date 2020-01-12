@@ -2,10 +2,11 @@ package org.kashiyatra.ky20;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
@@ -31,7 +32,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class NewLoginActivity extends AppCompatActivity {
-    Button button;
+    TextView registerLater;
     public int PERMISSIONS_REQUEST = 100;
     private FirebaseAuth mAuth;
     public static final int RC_SIGN_IN=1;
@@ -51,8 +52,8 @@ public class NewLoginActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);*/
         setContentView(R.layout.new_activity_login);
-        button=findViewById(R.id.button2);
-        button.setOnClickListener(new View.OnClickListener() {
+        registerLater=findViewById(R.id.registerLater);
+        registerLater.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(NewLoginActivity.this, HomeActivity.class));
@@ -75,6 +76,7 @@ public class NewLoginActivity extends AppCompatActivity {
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         signInButton.setVisibility(View.GONE);
+
       /*   KenBurnsView kbv = (KenBurnsView) findViewById(R.id.image);
 
 
@@ -145,7 +147,6 @@ public class NewLoginActivity extends AppCompatActivity {
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
-
 
 
     }

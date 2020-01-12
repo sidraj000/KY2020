@@ -402,8 +402,8 @@
 
 
     <string-array name="team_names_core">
-        <item>Mohit Sharma</item>
         <item>Utsav Gandhi</item>
+        <item>Mohit Sharma</item>
         <item>Rishabh Agarwal</item>
 
     </string-array>
@@ -467,9 +467,9 @@
     </string-array>
 
     <string-array name="team_roles_core">
-        <item>Co-Conveyor</item>
-        <item>Conveyor</item>
-        <item>Co-Conveyor</item>
+        <item>Convenor</item>
+        <item>Co-Convenor</item>
+        <item>Co-Convenor</item>
     </string-array>
 
     <string-array name="team_roles_marketing">
@@ -481,17 +481,17 @@
     </string-array>
 
     <string-array name="team_roles_publicity">
-        <item>internal publicity</item>
-        <item>internal publicity</item>
-        <item>internal publicity</item>
-        <item>internal publicity</item>
-        <item>internal publicity</item>
-        <item>internal publicity</item>
-        <item>External publicity</item>
-        <item>External publicity</item>
-        <item>External publicity</item>
+        <item>Internal Publicity</item>
+        <item>Internal Publicity</item>
+        <item>Internal Publicity</item>
+        <item>Internal Publicity</item>
+        <item>Internal Publicity</item>
+        <item>Internal Publicity</item>
+        <item>External Publicity</item>
+        <item>External Publicity</item>
+        <item>External Publicity</item>
 
-        <item>External publicity</item>
+        <item>External Publicity</item>
 
     </string-array>
 
@@ -534,8 +534,8 @@
     </string-array>
 
     <string-array name="team_photo_urls_core">
-        <item>https://i.ibb.co/Q901Lhj</item>
         <item>https://image.ibb.co/efrd4w</item>
+        <item>https://i.ibb.co/Q901Lhj</item>
         <item>https://image.ibb.co/mg8Qjw</item>
 
 
@@ -604,8 +604,8 @@
     </string-array>
 
     <string-array name="team_emails_core">
-        <item>mohit.sharma.che16@itbhu.ac.in</item>
         <item>utsav.gandhi.mec16@itbhu.ac.in; ‎</item>
+        <item>mohit.sharma.che16@itbhu.ac.in</item>
         <item>rishabh.agarwal.met16@itbhu.ac.in‎</item>
 
     </string-array>
@@ -666,8 +666,8 @@
     </string-array>
 
     <string-array name="team_fblinks_core">
-        <item>https://www.facebook.com/mohitsharma1997</item>
         <item>https://www.facebook.com/utsav.gandhi.1809</item>
+        <item>https://www.facebook.com/mohitsharma1997</item>
         <item>https://www.facebook.com/rishabagarwal135</item>
 
     </string-array>
@@ -730,8 +730,8 @@
     </string-array>
 
     <string-array name="team_linkedin_urls_core">
-        <item>https://www.linkedin.com/in/mohit-sharma-208648156/</item>
         <item>https://www.linkedin.com/in/utsav-gandhi-76924714a</item>
+        <item>https://www.linkedin.com/in/mohit-sharma-208648156/</item>
         <item>https://www.linkedin.com/in/rishabh-agarwal-287890149</item>
 
     </string-array>

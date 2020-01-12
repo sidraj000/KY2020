@@ -64,7 +64,7 @@ public class FaqActivity extends AppCompatActivity {
         listHashMap = new HashMap<>();
 
         listDataHeader.add("When is the next edition of Kashiyatra?");
-        listDataHeader.add("How can I participate in Kashiyatra'19");
+        listDataHeader.add("How can I participate in Kashiyatra'20");
         listDataHeader.add("What is the significance of the KY ID?");
         listDataHeader.add("Where should I report after reaching IIT (BHU) Varanasi?");
         listDataHeader.add("Are on-spot registrations allowed during the fest?");
@@ -83,9 +83,9 @@ public class FaqActivity extends AppCompatActivity {
 
 
         List<String> a1 = new ArrayList<>();
-        a1.add("Kashiyatra 2019 will be held from 18th to 20st January. Gear up for the 3 most awesome days of 2019!");
+        a1.add("Kashiyatra 2019 will be held from 17th to 19th January. Gear up for the 3 most awesome days of 2019!");
         List<String> a2 = new ArrayList<>();
-        a2.add("To participate in Kashiyatra'19, you need to register first. For each event you want to participate you need to register separately.");
+        a2.add("To participate in Kashiyatra'20, you need to register first. For each event you want to participate you need to register separately.");
         List<String> a3 = new ArrayList<>();
         a3.add("The first step which you need to do to participate in Kashiyatra is to generate your unique “KY ID”. This “KY ID” allows you to register yourself and your team for the different events of Kashiyatra. Also, during your participation at IIT (BHU) Varanasi, you will be asked to show your KY ID.");
         List<String> a4 = new ArrayList<>();

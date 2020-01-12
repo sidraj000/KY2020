@@ -25,7 +25,7 @@
         android:textColor="@color/gold"
         android:fontFamily="@font/opensans_semibold"
         android:gravity="center"
-        android:text="GRAB THE OFFICIAL LIMITED EDITION OF KY'19 MERCHANDISE"
+        android:text="GRAB THE OFFICIAL LIMITED EDITION OF KY'20 MERCHANDISE"
         android:textSize="20sp"/>
 
     <RelativeLayout
