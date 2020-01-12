@@ -40,13 +40,7 @@ public class SponsorsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_sponsors, container, false);
        ref=FirebaseDatabase.getInstance().getReference();
-      String[] types = getResources().getStringArray(R.array.sponsor_types);
-        String[] logoUrls = getResources().getStringArray(R.array.sponsor_logo_urls);
 
-        for(int i=0;i<types.length;i++)
-        {
-           ref.child("sponsors").child(Integer.toString(i)).setValue(new Sponsors(types[i],logoUrls[i]));
-        }
         RecyclerView mSponsorRecyclerView = rootView.findViewById(R.id.sponsor_recycler);
         GridLayoutManager mSponsorLayoutManager = new GridLayoutManager(getActivity(), 2);
         mSponsorLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
