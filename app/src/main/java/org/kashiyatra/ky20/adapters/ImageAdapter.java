@@ -72,13 +72,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
             imageView = itemView.findViewById(R.id.image_view_upload);
             header=itemView.findViewById(R.id.header);
             footer=itemView.findViewById(R.id.footer);
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    onImageClicked.onImageClicked(getAdapterPosition());
 
-                }
-            });
         }
     }
 

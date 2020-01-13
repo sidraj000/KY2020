@@ -405,6 +405,18 @@
         <item>Utsav Gandhi</item>
         <item>Mohit Sharma</item>
         <item>Rishabh Agarwal</item>
+        <item>Sai Sumanth</item>
+        <item>Sanprit Nayan</item>
+        <item>Ujjawal Khare</item>
+        <item>Pankaj P N Jarha</item>
+        <item>Prabhat Kumar</item>
+        <item>Jayant Chauhan</item>
+        <item>Neelanchal Khelwar</item>
+        <item>Keval Mehta</item>
+        <item>Paras Singh Chauhan</item>
+
+
+
 
     </string-array>
 
@@ -417,15 +429,17 @@
     </string-array>
 
     <string-array name="team_names_publicity">
-        <item>Vasu Aggrawal</item>
-        <item>Naveen Meena</item>
-        <item>Pankaj kumar kilaniya</item>
-        <item>Yash Rajpoot</item>
-        <item>Harsh Mehra</item>
-        <item>Neeraj Devadwal</item>
         <item>Sharad Godke</item>
         <item>Utkarsh Dwivedi</item>
         <item>Vaibhav</item>
+        <item>Yash</item>
+
+        <item>Vasu Aggrawal</item>
+        <item>Naveen Meena</item>
+        <item>Pankaj Kumar Kilaniya</item>
+        <item>Harsh Mehra</item>
+        <item>Neeraj Devadwal</item>
+
         <item>Pranav</item>
 
     </string-array>
@@ -441,94 +455,114 @@
     </string-array>
 
     <string-array name="team_names_opnlog">
+        <item>Jadhav Sai</item>
+        <item>Keshana Sai Narendra Kumar</item>
         <item>Daram Nitheesh</item>
         <item>Aravind</item>
-        <item>Atri Kumar Patel</item>
-        <item>Keshan sai Narendra Kumar</item>
         <item>E Kiran Kumar Goud</item>
-        <item>Jadhav Sai</item>
 
     </string-array>
 
     <string-array name="team_names_tech">
         <item>Vaibhav Kumar</item>
-        <item>Parth</item>
-        <item>Vaibhav</item>
-        <item>Pankaj</item>
+        <item>Parth Ambre</item>
+        <item>Vaibhav Tyagi</item>
+        <item>Pankaj Yaday</item>
 
 
     </string-array>
 
     <string-array name="team_names_creative">
+        <item>Sudhanshu</item>
+        <item>Dipesh</item>
+
         <item>Anjali</item>
-        <item>Khatri</item>
+        <item>Atri Kumar Patel</item>
+        <item>Khyati</item>
 
 
     </string-array>
 
     <string-array name="team_roles_core">
-        <item>Convenor</item>
-        <item>Co-Convenor</item>
-        <item>Co-Convenor</item>
+        <item>Convener</item>
+        <item>Co-Convener</item>
+        <item>Co-Convener</item>
+        <item>Head Advisor</item>
+        <item>Head Advisor</item>
+        <item>Chief Advisor</item>
+        <item>Chief Advisor</item>
+        <item>Chief Advisor</item>
+        <item>Senior Advisor</item>
+        <item>Senior Advisor</item>
+        <item>Senior Advisor</item>
+        <item>Senior Advisor</item>
+
+
+
     </string-array>
 
     <string-array name="team_roles_marketing">
-        <item>Marketing</item>
-        <item>Marketing</item>
-        <item>Marketing</item>
-        <item>Marketing</item>
+        <item>Marketing Team</item>
+        <item>Marketing Team</item>
+        <item>Marketing Team</item>
+        <item>Marketing Team</item>
 
     </string-array>
 
     <string-array name="team_roles_publicity">
-        <item>Internal Publicity</item>
-        <item>Internal Publicity</item>
-        <item>Internal Publicity</item>
-        <item>Internal Publicity</item>
-        <item>Internal Publicity</item>
-        <item>Internal Publicity</item>
-        <item>External Publicity</item>
-        <item>External Publicity</item>
-        <item>External Publicity</item>
+        <item> Publicity Team</item>
+        <item> Publicity Team</item>
+        <item> Publicity Team</item>
+        <item> Publicity Team</item>
+        <item> Publicity Team</item>
+        <item> Publicity Team</item>
+        <item> Publicity Team</item>
+        <item> Publicity Team</item>
+        <item> Publicity Team</item>
 
-        <item>External Publicity</item>
+        <item> Publicity Team</item>
 
     </string-array>
 
     <string-array name="team_roles_pubrel">
 
-        <item>Public Relations</item>
-        <item>Public Relations</item>
+        <item>Public Relations Team</item>
+        <item>Public Relations Team</item>
     </string-array>
 
     <string-array name="team_roles_events">
-        <item>Events</item>
-        <item>Events</item>
+        <item>Events Team</item>
+        <item>Events Team</item>
     </string-array>
 
     <string-array name="team_roles_opnlog">
-        <item>Operations and Logistics</item>
-        <item>Operations and Logistics</item>
-        <item>Operations and Logistics</item>
-        <item>Operations and Logistics</item>
-        <item>Operations and Logistics</item>
-        <item>Operations and Logistics</item>
+        <item>Operations and Logistics Team</item>
+        <item>Operations and Logistics Team</item>
+        <item>Operations and Logistics Team</item>
+        <item>Operations and Logistics Team</item>
+        <item>Operations and Logistics Team</item>
+        <item>Operations and Logistics Team</item>
 
 
     </string-array>
 
     <string-array name="team_roles_tech">
-        <item>Android App</item>
-        <item>Website</item>
-        <item>Tech</item>
-        <item>Tech</item>
+        <item>Android App Team</item>
+        <item>Website Team</item>
+        <item>Tech Team</item>
+        <item>Tech Team</item>
 
     </string-array>
 
     <string-array name="team_roles_creative">
+        <item>Design Team</item>
+        <item>Design Team</item>
+
         <item>Creative Team</item>
 
         <item>Creative Team</item>
+
+        <item>Content</item>
 
 
     </string-array>
@@ -537,6 +571,16 @@
         <item>https://image.ibb.co/efrd4w</item>
         <item>https://i.ibb.co/Q901Lhj</item>
         <item>https://image.ibb.co/mg8Qjw</item>
+        <item>https://image.ibb.co/mg8Qjw</item>
+        <item>https://image.ibb.co/mg8Qjw</item>
+        <item>https://image.ibb.co/mg8Qjw</item>
+        <item>https://image.ibb.co/mg8Qjw</item>
+        <item>https://image.ibb.co/mg8Qjw</item>
+        <item>https://image.ibb.co/mg8Qjw</item>
+        <item>https://image.ibb.co/mg8Qjw</item>
+        <item>https://image.ibb.co/mg8Qjw</item>
+        <item>https://image.ibb.co/mg8Qjw</item>
+
 
 
     </string-array>
@@ -552,21 +596,23 @@
     </string-array>
 
     <string-array name="team_photo_urls_publicity">
-        <item></item>
-        <item>https://i.ibb.co/K7Tz2pB/naveen.jpg</item>
-        <item>https://i.ibb.co/HYnLJjD</item>
-        <item>https://i.ibb.co/GMdm4Dz/sai-jadhav.jpg</item>
-        <item>https://i.ibb.co/gjbjsy8/harsh.jpg</item>
-        <item>https://i.ibb.co/fCgXygb/neeraj.jpg</item>
-
         <item>https://i.ibb.co/yF6WKLS/sharad.jpg</item>
         <item>https://i.ibb.co/k2x7cWF/utkarsh.jpg</item>
         <item>https://i.ibb.co/WVJnPnq/vaibhav.jpg</item>
+        <item></item>
+        <item>https://i.ibb.co/SNFVZWH/vasu.jpg</item>
+        <item>https://i.ibb.co/K7Tz2pB/naveen.jpg</item>
+        <item>https://i.ibb.co/BZ8gRQp/pankaj.jpg</item>
+        <item>https://i.ibb.co/gjbjsy8/harsh.jpg</item>
+        <item>https://i.ibb.co/fCgXygb/neeraj.jpg</item>
+
+
         <item>https://i.ibb.co/JrvR46j/pranav.jpg</item>
 
     </string-array>
 
     <string-array name="team_photo_urls_pubrel">
+
         <item>https://i.ibb.co/RHQ8P6Y</item>
         <item>https://i.ibb.co/LpFVydh/arjun.jpg</item>
 
@@ -580,24 +626,27 @@
     </string-array>
 
     <string-array name="team_photo_urls_opnlog">
+        <item>https://i.ibb.co/GMdm4Dz/sai-jadhav.jpg</item>
+        <item>https://i.ibb.co/YRrTzVM/sai-kesna.jpg</item>
         <item>https://i.ibb.co/bWsLMzW/niteesh.jpg</item>
         <item>https://i.ibb.co/F5DSbHM/aravind.jpg</item>
-        <item>https://i.ibb.co/HYnLJjD/atri.jpg</item>
-        <item>https://i.ibb.co/GMdm4Dz/sai-jadhav.jpg</item>
         <item>https://i.ibb.co/B3qVnnf/kiran.jpg</item>
-        <item>https://i.ibb.co/YRrTzVM/sai-kesna.jpg</item>
 
     </string-array>
 
     <string-array name="team_photo_urls_tech">
         <item>https://i.ibb.co/X48gNj9/vaibhav1.jpg</item>
         <item>https://i.ibb.co/C2GqvSs/parth.jpg</item>
-        <item>https://i.ibb.co/RTSvG3C/vaibhav.jpg</item>
+        <item>https://i.ibb.co/x7zCSt2/tyagi.jpg</item>
         <item>https://i.ibb.co/yn6BM64</item>
     </string-array>
 
     <string-array name="team_photo_urls_creative">
+        <item>https://i.ibb.co/D1qcGZC</item>
+        <item>https://i.ibb.co/D1qcGZC</item>
+
         <item>https://i.ibb.co/HhVwmpD/anjali.jpg</item>
+        <item>https://i.ibb.co/HYnLJjD/atri.jpg</item>
         <item>https://i.ibb.co/D1qcGZC</item>
 
 
@@ -607,6 +656,16 @@
         <item>utsav.gandhi.mec16@itbhu.ac.in; ‎</item>
         <item>mohit.sharma.che16@itbhu.ac.in</item>
         <item>rishabh.agarwal.met16@itbhu.ac.in‎</item>
+        <item>rishabh</item>
+        <item>rishabh</item>
+        <item>rishabh</item>
+        <item>rishabh</item>
+        <item>rishabh</item>
+        <item>rishabh</item>
+        <item>rishabh</item>
+        <item>rishabh</item>
+        <item>rishabh</item>
+
 
     </string-array>
 
@@ -618,21 +677,24 @@
     </string-array>
 
     <string-array name="team_emails_publicity">
-        <item>vasu.agrawal.bce17@iitbhu.ac.in</item>
-        <item>naveen.student.mec17@iitbhu.ac</item>
-        <item>pankaj.kkilaniya.civ17@iitbhu.ac.in</item>
-        <item>yash.wsingh.mec17@iitbhu.ac.in</item>
-        <item>harsh.kmehra.civ17@iitbhu.ac.in</item>
         <item>neeraj.devadwal.met17@iitbhu.ac.in</item>
         <item>utkarsh.dwivedi.mec17@itbhu.ac.in</item>
         <item>vaibhav.student.mec17@itbhu.ac.in</item>
+        <item>yash.wsingh.mec17@iitbhu.ac.in</item>
+
+        <item>vasu.agrawal.bce17@iitbhu.ac.in</item>
+        <item>naveen.student.mec17@iitbhu.ac</item>
+        <item>pankaj.kkilaniya.civ17@iitbhu.ac.in</item>
+        <item>harsh.kmehra.civ17@iitbhu.ac.in</item>
+
         <item>https://www.gmailgram.com/; ‎</item>
 
     </string-array>
 
     <string-array name="team_emails_pubrel">
-        <item>ansh.agrawal.che17@iitbhu.ac.in</item>
         <item>arjun.salyan.che17@itbhh.ac.in</item>
+
+        <item>ansh.agrawal.che17@iitbhu.ac.in</item>
 
     </string-array>
 
@@ -659,7 +721,12 @@
     </string-array>
 
     <string-array name="team_emails_creative">
+        <item>https://www.gmail.com/</item>
+        <item>https://www.gmail.com/</item>
+
         <item>anjali.student.che17@itbhu.ac.in</item>
+        <item>https://www.gmail.com/</item>
+
         <item>https://www.gmailgram.com/</item>
 
 
@@ -669,6 +736,17 @@
         <item>https://www.facebook.com/utsav.gandhi.1809</item>
         <item>https://www.facebook.com/mohitsharma1997</item>
         <item>https://www.facebook.com/rishabagarwal135</item>
+        <item>https://www.facebook.com/</item>
+        <item>https://www.facebook.com/</item>
+        <item>https://www.facebook.com/</item>
+        <item>https://www.facebook.com/</item>
+        <item>https://www.facebook.com/</item>
+        <item>https://www.facebook.com/</item>
+        <item>https://www.facebook.com/</item>
+        <item>https://www.facebook.com/</item>
+        <item>https://www.facebook.com/</item>
+
+
 
     </string-array>
 
@@ -682,21 +760,24 @@
     </string-array>
 
     <string-array name="team_fblinks_publicity">
-        <item>https://m.facebook.com/vasu.agrawal.33?ref=bookmarks</item>
-        <item>"https://www.facebook.com/"</item>
-        <item>https://www.facebook.com/pankaj.kkilaniya</item>
-        <item>https://www.facebook.com/beingyashrajput</item>
-        <item>https://www.facebook.com/hani.mehra.12</item>
-        <item>https://www.facebook.com/neeraj.devadwal </item>
         <item>https://www.facebook.com/sharaddghodke</item>
         <item>https://www.facebook.com/utkarsh.dwivedi.7583</item>
         <item>https://www.facebook.com/vaibhav.mehta.777363</item>
+        <item>https://www.facebook.com/beingyashrajput</item>
+
+        <item>https://m.facebook.com/vasu.agrawal.33?ref=bookmarks</item>
+        <item>"https://www.facebook.com/"</item>
+        <item>https://www.facebook.com/pankaj.kkilaniya</item>
+        <item>https://www.facebook.com/hani.mehra.12</item>
+        <item>https://www.facebook.com/neeraj.devadwal </item>
+
         <item>https://www.facebook.com/</item>
     </string-array>
 
     <string-array name="team_fblinks_pubrel">
-        <item>https://m.facebook.com/ansh.agrawal.315</item>
         <item>https://www.facebook.com/salyan.arjun</item>
+
+        <item>https://m.facebook.com/ansh.agrawal.315</item>
 
     </string-array>
 
@@ -707,12 +788,12 @@
     </string-array>
 
     <string-array name="team_fblinks_opnlog">
+        <item> https://www.facebook.com/saiprasad.jadhav.77</item>
+        <item>https://www.facebook.com/sai.kesana</item>
+
         <item>https://m.facebook.com/nitheesh.daram</item>
         <item>https://www.facebook.com/aravind.bethapudi</item>
-        <item>https://www.facebook.com/atri.patel.963</item>
-        <item>https://www.facebook.com/sai.kesana</item>
         <item>https://www.facebook.com/profile.php?id=100006123391481</item>
-       <item> https://www.facebook.com/saiprasad.jadhav.77</item>
     </string-array>
 
     <string-array name="team_fblinks_tech">
@@ -724,7 +805,12 @@
     </string-array>
 
     <string-array name="team_fblinks_creative">
+        <item>https://www.facebook.com/</item>
+        <item>https://www.facebook.com/</item>
+
         <item>https://m.facebook.com/profile.php?ref=bookmarks</item>
+        <item>https://www.facebook.com/atri.patel.963</item>
+
         <item>https://www.facebook.com/</item>
 
     </string-array>
@@ -733,6 +819,16 @@
         <item>https://www.linkedin.com/in/utsav-gandhi-76924714a</item>
         <item>https://www.linkedin.com/in/mohit-sharma-208648156/</item>
         <item>https://www.linkedin.com/in/rishabh-agarwal-287890149</item>
+        <item>https://www.linkedin.com/</item>
+        <item>https://www.linkedin.com/</item>
+        <item>https://www.linkedin.com/</item>
+        <item>https://www.linkedin.com/</item>
+        <item>https://www.linkedin.com/</item>
+        <item>https://www.linkedin.com/</item>
+        <item>https://www.linkedin.com/</item>
+        <item>https://www.linkedin.com/</item>
+        <item>https://www.linkedin.com/</item>
+
 
     </string-array>
 
@@ -745,22 +841,24 @@
     </string-array>
 
     <string-array name="team_linkedin_urls_publicity">
+        <item>https://www.linkedin.com/in/sharad-ghodke-ab3361161</item>
+        <item>https://www.linkedin.com/in/utkarsh-dwivedi-3340b7177/</item>
+        <item>https://www.linkedin.com/login</item>
         <item>https://www.linkedin.com/in/vasu-agrawal-6a23ab162</item>
         <item>https://www.linkedin.com/in/naveen-meena-0b813718b</item>
         <item>https://www.linkedin.com/in/pankaj-kumar-kilaniya-66b494180/</item>
         <item>https://www.linkedin.com/login</item>
         <item>https://www.linkedin.com/in/harsh-mehr-23a5aa195</item>
         <item>https://www.linkedin.com/login</item>
-        <item>https://www.linkedin.com/in/sharad-ghodke-ab3361161</item>
-        <item>https://www.linkedin.com/in/utkarsh-dwivedi-3340b7177/</item>
-        <item>https://www.linkedin.com/login</item>
+
         <item>https://www.linkedin.com/login</item>
 
     </string-array>
 
     <string-array name="team_linkedin_urls_pubrel">
-        <item>https://www.linkedin.com/in/ansh-agrawal-2520a916a</item>
         <item>https://www.linkedin.com/in/arjunsalyan</item>
+
+        <item>https://www.linkedin.com/in/ansh-agrawal-2520a916a</item>
     </string-array>
 
     <string-array name="team_linkedin_urls_events">
@@ -769,15 +867,15 @@
     </string-array>
 
     <string-array name="team_linkedin_urls_opnlog">
+        <item>https://www.linkedin.com/login</item>
+        <item>https://www.linkedin.com/</item>
+        <item>https://www.linkedin.com/</item>
         <item>https://www.linkedin.com/in/guna-sai-80b90814a</item>
         <item>https://www.linkedin.com/in/avinash-kmr/</item>
-        <item>https://www.linkedin.com/in/adarsh-sonkar-27565b158</item>
         <item>https://www.linkedin.com/in/prabhat-kumar-2bb501178</item>
-        <item>https://www.linkedin.com/</item>
         <item>https://www.linkedin.com/</item>
         <item>https://www.linkedin.com/in/ankit-meena-085150177</item>
         <item>https://www.linkedin.com/</item>
-        <item>https://www.linkedin.com/login</item>
 
     </string-array>
 
@@ -791,8 +889,13 @@
     </string-array>
 
     <string-array name="team_linkedin_urls_creative">
+        <item> https://www.linkedin.com/login</item>
+        <item> https://www.linkedin.com/login</item>
+
         <item>https://www.linkedin.com/in/anjali-272ab117a</item>
-       <item> https://www.linkedin.com/login</item>
+        <item> https://www.linkedin.com/login</item>
+
+        <item> https://www.linkedin.com/login</item>
     </string-array>
 
     <string-array name="genders">
