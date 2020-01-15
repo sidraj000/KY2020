@@ -7,10 +7,10 @@ android {
         applicationId "org.kashiyatra.ky20"
         minSdkVersion 23
         targetSdkVersion 28
-        versionName '2.1'
+        versionName '2.4'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
-        versionCode 5
+        versionCode 8
     }
     buildTypes {
         release {

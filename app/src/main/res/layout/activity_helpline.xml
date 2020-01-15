@@ -47,7 +47,7 @@
                     <TextView
                         android:layout_width="250dp"
                         android:layout_marginEnd="5dp"
-                        android:text="Vaibhav Mehta"
+                        android:text="Vaibhav"
                         android:textSize="20sp"
                         android:textColor="@color/white"
                         android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                         android:textSize="15sp"
                         android:layout_marginTop="13dp"
                         android:textColor="@color/white"
-                        android:text="9813392056"/>
+                        android:text="9350609331"/>
 
 
                 </LinearLayout>
@@ -108,7 +108,7 @@
                 android:textColor="@color/transparent"
                 android:padding="5dp"
                 android:onClick="call"
-                android:text="9813392056"/>
+                android:text="9350609331"/>
 
 
         </RelativeLayout>
@@ -145,7 +145,7 @@
                         android:layout_width="250dp"
                         android:layout_marginEnd="5dp"
                         android:textStyle="bold"
-                        android:text="Yashika Choudhary"
+                        android:text="Anushka"
                         android:textSize="20sp"
                         android:textColor="@color/white"
                         android:layout_height="wrap_content"
@@ -177,7 +177,7 @@
                         android:textSize="15sp"
                         android:layout_marginTop="13dp"
                         android:textColor="@color/white"
-                        android:text="9565532090"/>
+                        android:text="6387177397"/>
 
 
                 </LinearLayout>
@@ -207,7 +207,7 @@
                 android:textColor="@color/transparent"
                 android:padding="5dp"
                 android:onClick="call"
-                android:text="9565532090"/>
+                android:text="6387177397"/>
 
 
         </RelativeLayout>
@@ -243,7 +243,7 @@
                         android:layout_width="250dp"
                         android:layout_marginEnd="5dp"
                         android:textStyle="bold"
-                        android:text="Manoj Maurya"
+                        android:text="Manoj"
                         android:textSize="20sp"
                         android:textColor="@color/white"
                         android:layout_height="wrap_content"
@@ -311,7 +311,6 @@
         </RelativeLayout>
 
         <RelativeLayout
-            xmlns:card_view="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:padding="16dp">
@@ -322,11 +321,11 @@
                 android:layout_height="200dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="37dp"
-                card_view:cardElevation="6dp"
-                card_view:cardCornerRadius="10dp"
-                card_view:cardUseCompatPadding="true"
+                fab:cardElevation="6dp"
+                fab:cardCornerRadius="10dp"
+                fab:cardUseCompatPadding="true"
                 android:outlineAmbientShadowColor="@color/black"
-                card_view:cardPreventCornerOverlap="false">
+                fab:cardPreventCornerOverlap="false">
 
 
 
@@ -341,14 +340,14 @@
 
                     <TextView
                         android:layout_width="250dp"
-                        android:layout_marginEnd="5dp"
-                        android:textStyle="bold"
-                        android:text="Vasu Agarwal"
-                        android:textSize="20sp"
-                        android:textColor="@color/white"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
-                        android:layout_marginTop="20dp" />
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:text="Vasu"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="250dp"
@@ -393,8 +392,8 @@
                 android:elevation="20dp"
                 android:padding="5dp"
                 android:src="@drawable/telephone"
-                card_view:civ_border_color="@color/colorPrimary"
-                card_view:civ_border_width="2dp" />
+                fab:civ_border_color="@color/colorPrimary"
+                fab:civ_border_width="2dp" />
 
             <TextView
                 android:layout_width="75dp"
@@ -409,7 +408,105 @@
                 android:text="9926941757"/>
 
         </RelativeLayout>
+        <RelativeLayout
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="16dp">
 
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="37dp"
+                card_view:cardElevation="6dp"
+                card_view:cardCornerRadius="10dp"
+                card_view:cardUseCompatPadding="true"
+                android:outlineAmbientShadowColor="@color/black"
+                card_view:cardPreventCornerOverlap="false">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    android:background="@color/colorSecondary">
+
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_marginEnd="5dp"
+                        android:textStyle="bold"
+                        android:text="Rahul"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="20dp" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_gravity="end"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Hospitality"/>
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_marginEnd="155dp"
+                        android:layout_height="3dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="12dp"
+                        android:background="#2196f3"/>
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="5dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginTop="13dp"
+                        android:textColor="@color/white"
+                        android:text="9079848015"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:elevation="20dp"
+                android:padding="5dp"
+                android:src="@drawable/telephone"
+                card_view:civ_border_color="@color/colorPrimary"
+                card_view:civ_border_width="2dp" />
+
+            <TextView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:elevation="20dp"
+                android:padding="5dp"
+                android:textColor="@color/transparent"
+                android:onClick="call"
+                android:text="9079848015"/>
+
+        </RelativeLayout>
 
     </LinearLayout>
     </ScrollView>

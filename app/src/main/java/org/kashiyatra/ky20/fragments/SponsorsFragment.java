@@ -40,7 +40,6 @@ public class SponsorsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_sponsors, container, false);
        ref=FirebaseDatabase.getInstance().getReference();
-
         RecyclerView mSponsorRecyclerView = rootView.findViewById(R.id.sponsor_recycler);
         GridLayoutManager mSponsorLayoutManager = new GridLayoutManager(getActivity(), 2);
         mSponsorLayoutManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
